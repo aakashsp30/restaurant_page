@@ -52,7 +52,7 @@ export function loadMenuPage() {
     content.innerHTML = "";
 
     const page = document.createElement("div");
-    page.classList.add("page-header");
+    page.classList.add("menu-page");
 
     const header = document.createElement("div");
     header.classList.add("page-header");
