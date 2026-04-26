@@ -35,7 +35,7 @@ export function loadHomePage() {
             </div>
             <div class="home-divider"></div>
             <div class="home-stat">
-                <span class="home-stat-number">100</span>
+                <span class="home-stat-number">100%</span>
                 <span class="home-stat-label">Wood-fired</span>
             </div>
         </div>

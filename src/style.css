@@ -4,10 +4,6 @@
     padding: 0;
 }
 
-html, body {
-    height: 100%;
-}
-
 body {
     background: #1a1510;
     color: #f5f0e8;
@@ -27,7 +23,6 @@ header {
     padding: 0 4rem;
     height: 72px;
     background: rgba(26, 21, 16, 0.92);
-    backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(184, 154, 90, 0.25);
 }
 
@@ -35,7 +30,7 @@ header {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: 1.6rem;
     font-weight: 300;
-    letter-spacing: 0.08rem;
+    letter-spacing: 0.08em;
     color: #f5f0e8;
 }
 
@@ -60,8 +55,6 @@ nav {
     text-transform: uppercase;
     color: #8a7e6e;
     padding: 0.6rem 1.2rem;
-    border-radius: 2px;
-    position: relative;
 }
 
 .nav-btn:hover {
@@ -81,6 +74,7 @@ nav {
     height: calc(100vh - 72px);
     display: flex;
     align-items: center;
+    justify-content: space-between;
     overflow: hidden;
 }
 
@@ -164,8 +158,8 @@ nav {
 }
 
 .home-aside {
-    position: absolute;
-    right: 4rem;
+    position: relative;
+    padding-right: 4rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -180,7 +174,7 @@ nav {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: 3rem;
     font-weight: 300;
-    color: #e07a45;
+    color: #b89a5a;
     line-height: 1;
     display: block;
 }
@@ -274,7 +268,7 @@ nav {
 .menu-item-price {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: 1rem;
-    color: #c4622d;
+    color: #b89a5a;
     white-space: nowrap;
     flex-shrink: 0;
 }
@@ -286,7 +280,6 @@ nav {
 }
 
 .about-visual {
-    position: relative;
     background:
     radial-gradient(ellipse at 50% 50%, rgba(196, 98, 45, 0.2) 0%, transparent 70%),
     #2e2820;
@@ -304,7 +297,7 @@ nav {
     font-family: 'Cormorant Garamond', Georgia, serif;
     font-size: 8rem;
     line-height: 1;
-    color: #c4622d;
+    color: #b89a5a;
     opacity: 0.3;
     font-style: italic;
     font-weight: 300;
@@ -361,6 +354,10 @@ nav {
     text-transform: uppercase;
     color: #c4622d;
     margin-bottom: 1.5rem;
+}
+
+.about-person {
+    margin-bottom: 1.25rem;
 }
 
 .about-person-name {
